@@ -1,4 +1,2 @@
-Event-Manager
-=============
-
-Event-Manager for BRO
+# Interprocess Communication
+Interprocess Communication for BRO
