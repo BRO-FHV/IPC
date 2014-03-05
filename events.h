@@ -14,8 +14,16 @@
 // TODO remove after include scheduler.h
 typedef int8_t processID;
 
-bool events_on(char event_name[], processID pid);
+bool events_create(char event_name[], int count, processID pid[]);
+
+bool events_register_listener(char event_name[], processID pid);
+
+bool events_deregister_listener(char event_name[], processID pid);
 
 bool events_emit(char event_name[], processID pid);
+
+bool events_register_emitter(char event_name[], processID pid);
+
+bool events_deregister_emitter(char event_name[], processID pid);
 
 #endif
