@@ -20,7 +20,7 @@ bool events_register_listener(char event_name[], processID pid);
 
 bool events_deregister_listener(char event_name[], processID pid);
 
-bool events_emit(char event_name[], processID pid);
+bool events_emit(char event_name[], processID pid, void* data);
 
 bool events_register_emitter(char event_name[], processID pid);
 
